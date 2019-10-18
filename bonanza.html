@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bonanza</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="./css/style.css">
+	
+	<style>
+		 #whishlist-page{
+        margin-top:8px;
+        padding: 13px;
+    }
+    #header ul li a, #whishlist-page a{
+                padding: 10px 15px;
+                background: #4479BA;
+                color: #FFF;                    
+                text-decoration: none;
+    }
+    #img-td img{
+        width: 200px;
+        height: 80px;
+    }
+    td, th{
+        padding: 10px;
+        text-align: center;
+        border-bottom: 2px solid grey;
+        
+    }
+    .order-btn{
+        text-align: center;
+    }
+    .order-btn button{
+                padding: 10px 15px;
+                background: #2ECC71  ;
+                color: #FFF;                    
+      
+    } 
+
+		.imageSize{
+        width: 100%;
+        height: 100%;
+        outline-color: rgb(166, 161, 172);
+        outline-width: 5px;
+        outline-style: double;}
+        
+     #header{
+        display: flex;
+        justify-content: flex-start;
+    }
+    #header ul{
+        list-style-type: none;
+    }
+    #header ul li{
+                display: inline-block;
+    }
+
+
+	.btn{
+        font-size: 10px;
+		font-style: inherit;
+        padding: 0%;
+        margin: 0%;
+	}
+	.button {
+        color:#ffffffec;
+        font-style: unset;
+        background-color: rgb(45, 99, 165);
+        width: 148px;
+        height: 40px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: opacity .35s ease;
+        font-size: 7px;
+        border-radius: 8px;
+    	padding: 2px 20px;
+        display: inline-block;
+        /* font: status-bar; */
+		
+        
+        
+    }
+	figcaption a{
+	line-height: 2px;
+	color: blue;
+	margin-left: 2px;
+	font-size: 19px;
+	text-decoration: unset;
+	font-family: facelift;
+}
+figcaption a hover {
+	line-height: 2px;
+	color: white;
+	margin-left: 2px;
+	font-size: 19px;
+	font-family: facelift;
+	text-decoration: underline;
+
+}
+#clothbrands{
+	margin-top: 5px;
+	color: black;
+	font-size: 30px;
+	margin-left: 22px;
+	margin-bottom: 14px;
+	text-decoration: underline;
+	text-align: center;
+}
+#clothbrands:first-letter{
+	font-family: "fantasy";
+		font-size: 30px;
+		font-weight: bold;
+		color: red;
+		text-align: center;
+}
+
+
+	</style>
+
+</head>
+
+<body>
+		<figcaption id="clothbrands">Bonanza</figcaption>
+    <div id="header">
+   <ul>  &nbsp; &nbsp;
+            <li><a href="J..html">J.</a></li>
+            <li><a href="Ideas.html">Ideas</a></li>
+            <li><a href="Bonanza.html">Bonanza</a></li>
+            <li><a href="AsimJofa.html">Asim Jofa</a></li>
+        </ul>
+        <div id="whishlist">0</div>
+        <div id="whishlist-page"><a href="whishlist.html">Goto whishlist</a></div>
+
+    </div>
+    <div id="mainDiv">
+        <!-- <div id="0" class="image" onmouseout="hideButtons(0)" onmouseover="showButtons(0)"> -->
+            <!-- <h4>item 021</h4> 
+            <h4 class="price">Rs: 1220/-</h4><img src="./images/furniture.jpg" alt="" class="imageSize">
+            <div class="btn">
+                <button class="button" onclick="decrementItem(0)"><i class="fa fa-minus fa-3x"></i>Remove Item</button>
+				<button class="button" onclick="incrementItem(0)"><i class="fa fa-plus fa-3x"></i>Add</button></div>
+        </div>
+        <div id="1" class="image" onmouseout="hideButtons(1)" onmouseover="showButtons(1)">
+            <h4>item 022</h4>
+            <h4 class="price">Rs: 1365/-</h4><img src="./images/furniture.jpg" alt="" class="imageSize">
+            <div class="btn">
+                <button class="button" onclick="decrementItem(1)"><i class="fa fa-minus fa-3x"></i>Remove Item</button>
+                <button class="button" onclick="incrementItem(1)"><i class="fa fa-plus fa-3x"></i>Add</button>
+            </div>
+        </div>
+        <div id="2" class="image" onmouseout="hideButtons(2)" onmouseover="showButtons(2)">
+            <h4>item 023</h4>
+            <h4 class="price">Rs: 1000/-</h4><img src="./images/furniture.jpg" alt="" class="imageSize">
+            <div class="btn">
+                <button class="button" onclick="decrementItem(2)"><i class="fa fa-minus fa-3x"></i>Remove Item</button>
+                <button class="button" onclick="incrementItem(2)"><i class="fa fa-plus fa-3x"></i>Add</button></div>
+        </div>
+        <div id="3" class="image" onmouseout="hideButtons(3)" onmouseover="showButtons(3)">
+            <h4>item 024</h4>
+            <h4 class="price">Rs: 2500/-</h4><img src="./images/furniture.jpg" alt="" class="imageSize">
+            <div class="btn">
+				<button class="button" onclick="decrementItem(3)"><i class="fa fa-minus fa-3x"></i>Remove Item</button>
+                <button class="button" onclick="incrementItem(3)"><i class="fa fa-plus fa-3x"></i>Add</button></div>
+        </div>
+        <div id="4" class="image" onmouseout="hideButtons(4)" onmouseover="showButtons(4)">
+            <h4>item 025</h4>
+            <h4 class="price">Rs: 3620/-</h4><img src="./images/furniture.jpg" alt="" class="imageSize">
+			<div class="btn">
+				<button class="button" onclick="decrementItem(4)"><i class="fa fa-minus fa-3x"></i>Remove Item</button>
+				<button class="button" onclick="incrementItem(4)"><i class="fa fa-plus fa-3x"></i>Add</button></div>
+        </div>
+        <div id="5" class="image" onmouseout="hideButtons(5)" onmouseover="showButtons(5)">
+            <h4>item 026</h4>
+            <h4 class="price">Rs: 3550/-</h4><img src="./images/furniture.jpg" alt="" class="imageSize">
+            <div class="btn">
+				<button class="button" onclick="decrementItem(5)"><i class="fa fa-minus fa-3x"></i>Remove Item</button>
+                <button class="button" onclick="incrementItem(5)"><i class="fa fa-plus fa-3x"></i>Add</button></div>
+        </div>
+        <div id="6" class="image" onmouseout="hideButtons(6)" onmouseover="showButtons(6)">
+            <h4>item 027</h4>
+            <h4 class="price">Rs: 2145/-</h4><img src="./images/furniture.jpg" alt="" class="imageSize">
+			<div class="btn">
+				<button class="button" onclick="decrementItem(6)"><i class="fa fa-minus fa-3x"></i>Remove Item</button>
+				<button class="button" onclick="incrementItem(6)"><i class="fa fa-plus fa-3x"></i>Add</button></div>
+        </div>
+        <div id="7" class="image" onmouseout="hideButtons(7)" onmouseover="showButtons(7)">
+            <h4>item 028</h4>
+            <h4 class="price">Rs: 3665/-</h4><img src="./images/furniture.jpg" alt="" class="imageSize">
+			<div class="btn"><button class="button" onclick="decrementItem(7)"><i class="fa fa-minus fa-3x"></i>Remove Item</button>
+				<button class="button" onclick="incrementItem(7)"><i class="fa fa-plus fa-3x"></i>Add</button></div>
+        </div>
+        <div id="8" class="image" onmouseout="hideButtons(8)" onmouseover="showButtons(8)">
+            <h4>item 029</h4>
+            <h4 class="price">Rs: 9554/-</h4><img src="./images/furniture.jpg" alt="" class="imageSize">
+            <div class="btn">
+                <button class="button" onclick="decrementItem(8)"><i class="fa fa-minus fa-3x"></i>Remove Item</button>
+                <button class="button" onclick="incrementItem(8)"><i class="fa fa-plus fa-3x"></i>Add</button></div>
+        </div>
+        <div id="9" class="image" onmouseout="hideButtons(9)" onmouseover="showButtons(9)">
+            <h4>item 030</h4>
+            <h4 class="price">Rs: 3654/-</h4><img src="./images/furniture.jpg" alt="" class="imageSize">
+            <div class="btn">
+				<button class="button" onclick="decrementItem(9)"><i class="fa fa-minus fa-3x"></i>Remove Item</button>
+                <button class="button" onclick="incrementItem(9)"><i class="fa fa-plus fa-3x"></i>Add</button></div>
+        </div>  -->
+    </div> 
+
+    <script src="./js/furniture.js"></script>
+    <script src="./js/functions.js"></script>
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>

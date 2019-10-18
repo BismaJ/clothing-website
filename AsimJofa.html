@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Asim Jofa</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> -->
+
+    <style>
+		 #whishlist-page{
+        margin-top:8px;
+        padding: 13px;
+    }
+    #header ul li a, #whishlist-page a{
+                padding: 10px 15px;
+                background: #4479BA;
+                color: #FFF;                    
+                text-decoration: none;
+    }
+    #img-td img{
+        width: 200px;
+        height: 80px;
+    }
+    td, th{
+        padding: 10px;
+        text-align: center;
+        border-bottom: grey;
+        
+    }
+    .order-btn{
+        text-align: center;
+    }
+    .order-btn button{
+                padding: 10px 15px;
+                background: #2ECC71  ;
+                color: #FFF;                    
+      
+    } 
+
+		.imageSize{
+        width: 100%;
+        height: 100%;
+        outline-color: rgb(166, 161, 172);
+        outline-width: 5px;
+        outline-style: double;
+    }
+     #header{
+        display: flex;
+        justify-content: flex-start;
+    }
+    #header ul{
+        list-style-type: none;
+    }
+    #header ul li{
+                display: inline-block;
+    }
+    .btn{
+        font-size: 10px;
+		font-style: inherit;
+        padding: 0%;
+        margin: 0%;
+         animation-name: add;
+		
+    
+	}
+	#clothbrands:first-letter{
+	font-family: "fantasy";
+		font-size: 30px;
+		font-weight: bold;
+		color: red;
+		text-align: center;
+}
+#clothbrands{
+	margin-top: 5px;
+	color: black;
+	font-size: 30px;
+	margin-left: 22px;
+	margin-bottom: 14px;
+	text-decoration: underline;
+	text-align: center;
+}
+figcaption a{
+	line-height: 2px;
+	color: blue;
+	margin-left: 2px;
+	font-size: 19px;
+	text-decoration: unset;
+	font-family: facelift;
+}
+figcaption a hover {
+	line-height: 2px;
+	color: white;
+	margin-left: 2px;
+	font-size: 19px;
+	font-family: facelift;
+	text-decoration: underline;
+
+}
+.button {
+        color:#ffffffec;
+        font-style: unset;
+        background-color: rgb(45, 99, 165);
+        width: 148px;
+        height: 40px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: opacity .35s ease;
+        font-size: 7px;
+        border-radius: 8px;
+    	padding: 2px 20px;
+        display: inline-block;
+        /* font: message-box; */
+		
+        
+        
+    }
+
+    </style>
+
+</head>
+
+<body>
+
+    
+
+
+		<figcaption id="clothbrands">Asim Jofa</figcaption><br>
+    <div id="header">
+   <ul> &nbsp; &nbsp;
+            <li><a href="J..html">J.</a></li>
+            <li><a href="Ideas.html">Ideas</a></li>
+            <li><a href="Bonanza.html">Bonanza</a></li>
+            <li><a href="AsimJofa.html">Asim Jofa</a></li>
+        </ul>
+        <div id="whishlist">0</div>
+         <div id="whishlist-page"><a href="whishlist.html">Goto whishlist</a></div>
+
+    </div>
+    <div id="mainDiv">
+        <!-- <div id="0" class="image" onmouseout="hideButtons(0)" onmouseover="showButtons(0)">
+            <h4>item 031</h4>
+            <h4 class="price">Rs: 120/-</h4><img src="./img/aj/aa.jpg" alt="" class="imageSize">
+            <div class="btn">
+                <button class="button" onclick="decrementItem(0)"><i class="fa fa-minus fa-3x"></i>Remove Item</button>
+                <button class="button" onclick="incrementItem(0)"><i class="fa fa-plus fa-3x"></i>Add</button></div>
+        </div>
+        <div id="1" class="image" onmouseout="hideButtons(1)" onmouseover="showButtons(1)">
+            <h4>item 032</h4>
+            <h4 class="price">Rs: 160/-</h4><img src="./images/flower.jpg" alt="" class="imageSize">
+            <div class="btn">
+                <button class="button" onclick="decrementItem(1)"><i class="fa fa-minus fa-3x"></i>Remove Item</button>
+                <button class="button" onclick="incrementItem(1)"><i class="fa fa-plus fa-3x"></i>Add</button>
+            </div>
+        </div>
+        <div id="2" class="image" onmouseout="hideButtons(2)" onmouseover="showButtons(2)">
+            <h4>item 033</h4>
+            <h4 class="price">Rs: 360/-</h4><img src="./images/flower.jpg" alt="" class="imageSize">
+            <div class="btn">
+                <button class="button" onclick="decrementItem(2)"><i class="fa fa-minus fa-3x"></i>Remove Item</button>
+                <button class="button" onclick="incrementItem(2)"><i class="fa fa-plus fa-3x"></i>Add</button></div>
+        </div>
+        <div id="3" class="image" onmouseout="hideButtons(3)" onmouseover="showButtons(3)">
+            <h4>item 034</h4>
+            <h4 class="price">Rs: 620/-</h4><img src="./images/flower.jpg" alt="" class="imageSize">
+            <div class="btn">
+                <button class="button" onclick="decrementItem(3)"><i class="fa fa-minus fa-3x"></i>Remove Item</button>
+                <button class="button" onclick="incrementItem(3)"><i class="fa fa-plus fa-3x"></i>Add</button></div>
+        </div>
+        <div id="4" class="image" onmouseout="hideButtons(4)" onmouseover="showButtons(4)">
+            <h4>item 035</h4>
+            <h4 class="price">Rs: 220/-</h4><img src="./images/flower.jpg" alt="" class="imageSize">
+            <div class="btn">
+                <button class="button" onclick="decrementItem(4)"><i class="fa fa-minus fa-3x"></i>Remove Item</button>
+                <button class="button" onclick="incrementItem(4)"><i class="fa fa-plus fa-3x"></i>Add</button></div>
+        </div>
+        <div id="5" class="image" onmouseout="hideButtons(5)" onmouseover="showButtons(5)">
+            <h4>item 036</h4>
+            <h4 class="price">Rs: 920/-</h4><img src="./images/flower.jpg" alt="" class="imageSize">
+            <div class="btn">
+                <button class="button" onclick="decrementItem(5)"><i class="fa fa-minus fa-3x"></i>Remove Item</button>
+                <button class="button" onclick="incrementItem(5)"><i class="fa fa-plus fa-3x"></i>Add</button></div>
+        </div>
+        <div id="6" class="image" onmouseout="hideButtons(6)" onmouseover="showButtons(6)">
+            <h4>item 037</h4>
+            <h4 class="price">Rs: 423/-</h4><img src="./images/flower.jpg" alt="" class="imageSize">
+            <div class="btn">
+                <button class="button" onclick="decrementItem(6)"><i class="fa fa-minus fa-3x"></i>Remove Item</button>
+                <button class="button" onclick="incrementItem(6)"><i class="fa fa-plus fa-3x"></i>Add</button></div>
+        </div>
+        <div id="7" class="image" onmouseout="hideButtons(7)" onmouseover="showButtons(7)">
+            <h4>item 038</h4>
+            <h4 class="price">Rs: 321/-</h4><img src="./images/flower.jpg" alt="" class="imageSize">
+            <div class="btn">
+                <button class="button" onclick="decrementItem(7)"><i class="fa fa-minus fa-3x"></i>Remove Item</button>
+                <button class="button" onclick="incrementItem(7)"><i class="fa fa-plus fa-3x"></i>Add</button></div>
+        </div>
+        <div id="8" class="image" onmouseout="hideButtons(8)" onmouseover="showButtons(8)">
+            <h4>item 039</h4>
+            <h4 class="price">Rs: 456/-</h4><img src="./images/flower.jpg" alt="" class="imageSize">
+            <div class="btn">
+                <button class="button" onclick="decrementItem(8)"><i class="fa fa-minus fa-3x"></i>Remove Item</button>
+                <button class="button" onclick="incrementItem(8)"><i class="fa fa-plus fa-3x"></i>Add</button></div>
+        </div>
+        <div id="9" class="image" onmouseout="hideButtons(9)" onmouseover="showButtons(9)">
+            <h4>item 040</h4>
+            <h4 class="price">Rs: 951/-</h4><img src="./images/flower.jpg" alt="" class="imageSize">
+            <div class="btn">
+                <button class="button" onclick="decrementItem(9)"><i class="fa fa-minus fa-3x"></i>Remove Item</button>
+                <button class="button" onclick="incrementItem(9)"><i class="fa fa-plus fa-3x"></i>Add</button></div>
+        </div> -->
+    </div>
+
+    <script src="./js/flowers.js"></script>
+    <script src="./js/functions.js"></script>
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>
